@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<title>portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/big.css">
+<body class="Responsive">
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1" id="home">
+  <div class="display-middle">
+    <h1 id="large" class="center padding-large xlarge wide animate-opacity">  DANIEL BEECROFT</h1>  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT ME</h3>
+  <p class="center"><em>SOFTWARE DEVELOPMENT & GRAPHIC DESIGN</em></p>
+  <p>For as long as I can remember I have loved to create. As a child, you could often find me hidden away working on some art project.
+  As a teen I became interested in computers and quickly learned to mix making art with technology. I have utilized tools from Adobe to make digital
+  art and edit photo's and video. Later I learned to incorporate my musical abilities with music production software. My most recent endeavors have focused on
+  creating applications with javascript, html, css and a variety of other tools.
+  </p>
+  <div class="row">
+    <div class="center">
+
+      <img src="/image/me.jpg" id="moreRound" class="image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+
+  </div>
+
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="content container padding-64" id="portfolio">
+  <h3 class="center">PROJECTS</h3>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+     <a href="facebook.com"> <img src="/image/piddy p.JPG" style="width:100%"  class="hover-opacity" alt="my lovely wife"></a>
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='block'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="content container padding-64" id="contact">
+  <h3 class="center">WHERE I WORK</h3>
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <!-- Add Google Maps -->
+    </div>
+    <div id="left" class="col m8 panel">
+
+      <iframe id="googMap" class="resposive" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3222.39662322962!2d-86.7587811!3d36.132555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc22254d572eccb5!2sNashville+Software+School!5e0!3m2!1sen!2sus!4v1530800211209" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <button class="button black center section" type="submit" name="submit">
+          <i id="sendBtn" class="fa fa-paper-plane"></i> <a href="mailto:binauralbeat001@gmail.com">SEND MESSAGE</a>
+        </button>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <a id="socialLink" class="fa fa-facebook-official hover-opacity" href="https://www.facebook.com/daniel.k.beecroft"></a>
+    <a id="socialLink" class="fa fa-instagram hover-opacity" href="https://www.instagram.com/enkiisgod/"></a>
+    <a id="socialLink" class="fa fa-linkedin hover-opacity" href="https://www.linkedin.com/in/daniel-beecroft-2081a7102/"></a>
+  </div>
+</footer>
+
+
+<script src="/scripts/nav.js"></script>
+<script src="/scripts/gallery.js"></script>
+<script src="/scripts/menu.js"></script>
+<script src="/scripts/map.js"></script>
+<script src="/scripts/email.js"></script>
+
+</body>
+</html>

@@ -46,8 +46,13 @@ body {
 
 }
 
+#textCenter {
+    text-align: center;
+}
+
 #moreRound {
     border-radius: 50%;
+    border-color: rgb(88, 88, 88);
 }
 
 

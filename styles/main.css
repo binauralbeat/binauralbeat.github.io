@@ -29,11 +29,12 @@ body, html {
 
 .responsive_image {
     width: 100%;
-    max-width: 1050px;
+    max-width: 1750px;
     height: auto;
     margin: auto;
     /* padding: 20px; */
     /* display: block; */
+    transform: translate(0%, -5%);
 }
 .skinny {
     width: 50%;
@@ -117,14 +118,17 @@ p {
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
-
+    width: 100%;
+    max-width: 1750px;
+    height: auto;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .8;
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/image/logo-backing.png');
+    background-image: url('/image/logo-backing-min.png');
     min-height: 100%;
     min-width: 100%;
     background-position: center 10%;
@@ -137,7 +141,7 @@ span {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/image/bird.JPG");
+    background-image: url("/image/bird-min.JPG");
     min-height: 400px;
     background-position: center;;
 }
@@ -148,7 +152,7 @@ iframe {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/image/rocks.JPG");
+    background-image: url("/image/rocks-min.JPG");
     min-height: 400px;
     background-position: center;
 }
@@ -157,8 +161,8 @@ iframe {
 .hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+/* @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-}
+} */

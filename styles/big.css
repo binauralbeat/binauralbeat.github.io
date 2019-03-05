@@ -1132,7 +1132,7 @@ a {
 }
 
 .animate-opacity {
-    animation: opac 0.8s
+    animation: opac 2.0s
 }
 
 @keyframes opac {

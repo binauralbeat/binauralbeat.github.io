@@ -1134,6 +1134,9 @@ a {
 .animate-opacity {
     animation: opac 2.0s
 }
+.animate-opacity-2 {
+    animation: opac 4.0s
+}
 
 @keyframes opac {
     from {

@@ -40,6 +40,29 @@ body, html {
 
 }
 
+.white-text {
+    color: rgb(219, 225, 230);
+}
+
+.narrow-margin {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.animate-opacity-2 {
+    animation: opac 6.0s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .responsive_image {
     width: 100%;
     max-width: 1750px;

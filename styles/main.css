@@ -40,6 +40,16 @@ body, html {
 
 }
 
+.smaller-img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.inline {
+    display: inline-block;
+}
+
 .white-text {
     color: rgb(219, 225, 230);
 }
@@ -184,6 +194,17 @@ h3 {
     animation: opac 6.0s
 
 }
+
+.web-app-container {
+    display: inline-flex;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    transform: translate(-20px, 0px);
+
+}
+
+
 
 span {
     text-align: center;

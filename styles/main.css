@@ -7,8 +7,12 @@ body, html {
 
 }
 
+.navigate {
+    z-index: 1;
+}
+
 .display-middle {
-    color: white;
+    color: rgb(242, 243, 227);
     /* margin: 10%; */
     font-size: 30px;
     background-color: rgba(0, 0, 0, .5);
@@ -134,7 +138,7 @@ body {
 }
 p {
     color: rgb(242, 243, 227);
-    background-color: black;
+
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -201,7 +205,24 @@ h3 {
     width: 100%;
     padding: 20px;
     transform: translate(-20px, 0px);
+    margin-top: 30px;
+    margin-bottom: 50px;
 
+}
+
+.underline {
+   border-bottom: 1px solid;
+    border-color: rgb(242, 243, 227);
+    padding-bottom: 8px;
+    width: 30%;
+    margin: auto;
+    color: rgb(242, 243, 227);
+    margin-bottom: 20px;
+
+}
+
+.float-right {
+    float: right;
 }
 
 
@@ -234,6 +255,44 @@ iframe {
     min-height: 400px;
     background-position: center;
 }
+
+.about-container {
+    width: 100%;
+    background-image: url(/image/bird.JPG);
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.opacity-box {
+    background-color: rgba(0, 0, 0, 0.308);
+    width: 45%;
+    padding: 30px;
+    max-height: 500px;
+    overflow: auto;
+    /* margin: auto; */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(180, 180, 180, 0.411);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f8f8f8;
+  }
 
 .wide {letter-spacing: 10px;}
 .hover-opacity {cursor: pointer;}

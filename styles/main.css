@@ -131,13 +131,13 @@ body {
 }
 
 #aboutMe {
-    width: xpx;
+
  margin: 0 auto;
 
 
 }
 p {
-    color: rgb(242, 243, 227);
+    color: rgb(250, 250, 245);
 
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -257,19 +257,42 @@ iframe {
 }
 
 .about-container {
-    width: 100%;
-    background-image: url(/image/bird.JPG);
+    background-position: center;
+    max-width: 1750px;
+    max-height: 644px;
+background-attachment: fixed;
+    background-image: url(/image/DSC04524\(edit\).jpg);
     padding: 20px;
     margin-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    display: inline-block;
 }
 
 .opacity-box {
-    background-color: rgba(0, 0, 0, 0.308);
-    width: 45%;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 42%;
     padding: 30px;
     max-height: 500px;
     overflow: auto;
     /* margin: auto; */
+}
+.opacity-box-2 {
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 42%;
+    padding: 30px;
+    max-height: 500px;
+    overflow: auto;
+    transform: translate(0px, -560px);
+
+
+    /* margin: auto; */
+}
+
+.opacity-box-2 img {
+    width: 500px;
+    margin: auto;
 }
 
 /* width */
@@ -291,15 +314,61 @@ iframe {
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #f8f8f8;
+    background: rgb(242, 243, 227);
   }
 
 .wide {letter-spacing: 10px;}
 .hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
+        background-size: 50%;
     }
-} */
+}
+
+.row-2 {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column-2 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    /* max-width: 25%; */
+    padding: 4px ;
+  }
+
+  .column-2 img {
+    margin-top: 4px;
+    vertical-align: middle;
+  }
+
+  .narrow {
+      width: 100%;
+      margin: auto;
+      height: 800px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column-2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-2 {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

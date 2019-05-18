@@ -261,21 +261,23 @@ iframe {
     max-width: 1750px;
     max-height: 644px;
 background-attachment: fixed;
-    background-image: url(/image/DSC04524\(edit\).jpg);
+    background-image: url(/image/me-2.jpg);
     padding: 20px;
     margin-bottom: 70px;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .8;
     display: inline-block;
+    border-radius: 5px;
 }
 
 .opacity-box {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.747);
     width: 42%;
     padding: 30px;
     max-height: 500px;
     overflow: auto;
+    border-radius: 8px;
     /* margin: auto; */
 }
 .opacity-box-2 {

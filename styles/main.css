@@ -187,7 +187,7 @@ h3 {
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .8;
+    /* opacity: .8; */
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
@@ -257,17 +257,11 @@ iframe {
 }
 
 .about-container {
-    background-position: center;
     max-width: 1750px;
     max-height: 644px;
-background-attachment: fixed;
-    background-image: url(/image/me-2.jpg);
     padding: 20px;
     margin-bottom: 70px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .8;
-    display: inline-block;
+    /* opacity: .8; */
     border-radius: 5px;
 }
 

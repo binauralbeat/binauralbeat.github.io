@@ -9,15 +9,15 @@
 <!-- <link rel="stylesheet" href="/styles/big.css"> -->
 <link rel="stylesheet" href="/styles/photo.css">
 
-<body class="Responsive">
+<body >
 
   <!-- Navbar (sit on top) -->
 
-    <div class="bar white" id="myNavbar">
-      <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);"
+    <div class="bar white" id="myNavbar" style="padding:10px; position:fixed; width:100%; z-index:1; top:0;">
+      <!-- <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);"
         onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
-      </a>
+      </a> -->
       <a href="#home" class="bar-item button">HOME</a>
       <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
       <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
@@ -34,15 +34,15 @@
   </div>
 
   <!-- First Parallax Image with Logo Text -->
-  <div class="parallax-window" data-parallax="scroll" style="width:100%; height: 100%;"
+  <div class="parallax-window display-container" data-parallax="scroll" style="width:100%; height: 100%;"
     data-image-src="/image/DSC04524(edit).jpg" id="home">
-    <div class="" style="display:block; margin-top:50px;">
+    <div class="" style="display:block; margin-top:5px;">
       <img src="/image/portfolio-logo-Recovered-min-1.png" style=" display:block; margin: auto;"
         class="responsive_image animate-opacity"> </div>
   </div>
 
   <!-- Container (About Section) -->
-  <div class="padding-top margin-bottom " id="about">
+  <div class="padding-top padding-bottom margin-bottom margin-top" id="about">
     <h3 class="center white-text wide underline">ABOUT ME</h3>
     <div class="parallax-window about-container" data-parallax="scroll" style="width:100%; height: 100%;"
       data-image-src="/image/me-2.jpg">
@@ -81,7 +81,7 @@
 
 
   <!-- Second Parallax Image with Portfolio Text -->
-  <div id="portfolio" class=" display-container rounded-edges opacity-min margin-top" class="parallax-window "
+  <div id="portfolio" class=" display-container rounded-edges opacity-min " class="parallax-window "
     data-parallax="scroll" style="width:100%; height: 100%;" data-image-src="/image/bird-min.jpg">
 
     <div class=" center margin-auto padding-top-50 display-middle rounded-edges">
@@ -238,7 +238,7 @@
 
 
 
-      <div class=" margin-top" style="padding-bottom: 300px;">
+      <div class=" margin-top" style="padding-bottom: 100px;">
         <h3 class="center white-text margin-top padding-top margin-bottom  wide underline">GRAPHIC DESIGN
         </h3>
 
@@ -321,7 +321,7 @@
   </div>
 
   <!-- Third Parallax Image with Portfolio Text -->
-  <div id="contact" class="margin-top display-container rounded-edges opacity-min" class="parallax-window " data-parallax="scroll"
+  <div id="contact" class=" display-container rounded-edges opacity-min" class="parallax-window " data-parallax="scroll"
     style="width:100%; height: 100%;" data-image-src="/image/rocks-min.jpg">
     <div class="center margin-auto padding-top-50 display-middle rounded-edges">
       <span class="xxlarge text-white wide wide-padding">CONTACT</span>
@@ -331,7 +331,7 @@
   <footer class="center black padding-64 opacity hover-opacity-off">
     <!-- <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a> -->
     <button style="margin: auto;" class="center button black center section" type="submit" name="submit">
-      <i id="sendBtn" class="fa fa-paper-plane"></i> <a href="mailto:danielkbeecroft@gmail.com">SEND MESSAGE</a>
+      <i id="sendBtn" class="fa fa-paper-plane bar-item white"></i> <a href="mailto:danielkbeecroft@gmail.com">SEND MESSAGE</a>
     </button>
     <div class="xlarge section">
       <a id="socialLink" class="fa fa-facebook-official hover-opacity" href="https://www.facebook.com/daniel.k.beecroft"

@@ -32,7 +32,7 @@
 
   .prev {
     left: 0;
-    transform: translate( 0%, -350px);
+    transform: translate( 0%, -500px);
     /* padding-right: 20%; */
   }
 
@@ -41,7 +41,7 @@
     right: 0;
     /* border-radius: 3px 0 0 3px; */
     /* padding-left: 20%; */
-    transform: translate(20%, -350px);
+    transform: translate(20%, -500px);
   }
 
   /* On hover, add a black background color with a little bit see-through */

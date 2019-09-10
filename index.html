@@ -2,7 +2,7 @@
 <html>
 <title>portfolio</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=3">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/styles/main.css">
@@ -13,7 +13,7 @@
 
   <!-- Navbar (sit on top) -->
 
-    <div class="bar white" id="myNavbar" style="padding:10px; position:fixed; width:100%; z-index:1; top:0;">
+    <div class="bar white small-hidden" id="myNavbar" style="padding:10px; position:fixed; width:100%; z-index:1; top:0;">
       <!-- <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);"
         onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
@@ -44,7 +44,7 @@
   <!-- Container (About Section) -->
   <div class="padding-top padding-bottom margin-bottom margin-top" id="about">
     <h3 class="center white-text wide underline">ABOUT ME</h3>
-    <div class="parallax-window about-container" data-parallax="scroll" style="width:100%; height: 100%;"
+    <div class="parallax-window about-container small-about large-about" data-parallax="scroll" style="width:100%; height: 100%;"
       data-image-src="/image/me-2.jpg">
       <div class="opacity-box">
         <p class="center wide  ">SOFTWARE DEVELOPMENT & GRAPHIC DESIGN</p>
@@ -126,6 +126,11 @@
       <h3 class="center white-text margin-top padding-top margin-bottom  wide underline">PHOTOGRAPHY
       </h3>
       <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="/image/photo_section/DSC02844 (2).JPG" style="width:100%">
+        </div>
+
       <div class="mySlides margin-top">
         <div class="numbertext"></div>
         <img src="/image/photo_section/9.JPG" style="width:100%">
@@ -141,10 +146,6 @@
         <img src="/image/photo_section/DSC02044.JPG" style="width:100%">
       </div>
 
-      <div class="mySlides">
-        <div class="numbertext"></div>
-        <img src="/image/photo_section/DSC02844 (2).JPG" style="width:100%">
-      </div>
 
       <div class="mySlides">
         <div class="numbertext"></div>
@@ -194,6 +195,10 @@
       <!-- Thumbnail images -->
       <div class="row">
         <div class="column">
+          <img class="demo cursor" src="/image/photo_section/DSC02844 (2).JPG" style="width:100%"
+            onclick="currentSlide(4)">
+        </div>
+        <div class="column">
           <img class="demo cursor" src="/image/photo_section/9.JPG" style="width:100%" onclick="currentSlide(1)">
         </div>
         <div class="column">
@@ -202,10 +207,6 @@
         </div>
         <div class="column">
           <img class="demo cursor" src="/image/photo_section/DSC02044.JPG" style="width:100%" onclick="currentSlide(3)">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="/image/photo_section/DSC02844 (2).JPG" style="width:100%"
-            onclick="currentSlide(4)">
         </div>
         <div class="column">
           <img class="demo cursor" src="/image/photo_section/DSC02946 (2).JPG" style="width:100%"

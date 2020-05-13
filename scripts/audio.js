@@ -1,6 +1,7 @@
 //------------------------------
 // Buffer Loader Class
 //------------------------------
+StartAudioContext(Tone.context);
 
 function BufferLoader(context, urlList, callback) {
   this.context = context;
